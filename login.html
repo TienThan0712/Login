@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function getinput(){
+            var email = document.getElementById("email").value;
+            var pass = document.getElementById("pass").value;
+            console.log(email);
+            console.log(pass);
+        }
+    </script>
+    <div class="card">
+        <div class="layout_login">
+            <h1 class="login"> Login  </h1>
+        </div>
+
+        <div class="form_contrainer">
+            <form action="" class="form">
+                <div class="form_row">
+                    <label class="form_label" for="name">Email: </label> 
+                    <BR></BR>
+                    <input class="form_input" type="email" id="email" name="user" placeholder="Email" required>   
+                </div>
+                <div class="form_row">
+                    <label class="form_label" for="password">Mật khẩu: </label>
+                    <BR></BR>
+                    <input class="form_input" type="password" name="pass" id="pass" placeholder="Password" required> 
+                </div>
+                <div class="button_layout">
+                    <button class="form_button" type="submit" name="submit" onclick="getinput()">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>
+
+
